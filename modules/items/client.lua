@@ -188,6 +188,442 @@ end)
 
 -----------------------------------------------------------------------------------------------
 
+Item('mask', function(data, slot)
+	if PlayerData.sex == 1 and slot.metadata.sex ~= 'female' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement d\'homme' })
+		return
+	elseif PlayerData.sex == 0 and slot.metadata.sex ~= 'male' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement de femme' })
+		return
+	end
+	
+	TriggerEvent('qbx_symbiose:client:checkDress', {
+		type = 'drawables',
+		index = slot.metadata.index, 
+		sex = PlayerData.sex,
+		cb = function(canDress)
+			if not canDress then
+				lib.notify({description = 'T\'as déjà un pantalon sur toi !'})
+				return 
+			end
+
+			ox_inventory:useItem(data, function(data)
+				if data then
+					TriggerServerEvent('qbx_symbiose:server:clothesSaveItemsRename', data)
+					TriggerEvent('qbx_symbiose:client:applyDress', slot.metadata)
+				end
+			end)
+		end
+	})
+end)
+
+Item('arms', function(data, slot)
+	if PlayerData.sex == 1 and slot.metadata.sex ~= 'female' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement d\'homme' })
+		return
+	elseif PlayerData.sex == 0 and slot.metadata.sex ~= 'male' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement de femme' })
+		return
+	end
+	
+	TriggerEvent('qbx_symbiose:client:checkDress', {
+		type = 'drawables',
+		index = slot.metadata.index, 
+		sex = PlayerData.sex,
+		cb = function(canDress)
+			if not canDress then
+				lib.notify({description = 'T\'as déjà un pantalon sur toi !'})
+				return 
+			end
+
+			ox_inventory:useItem(data, function(data)
+				if data then
+					TriggerServerEvent('qbx_symbiose:server:clothesSaveItemsRename', data)
+					TriggerEvent('qbx_symbiose:client:applyDress', slot.metadata)
+				end
+			end)
+		end
+	})
+end)
+
+Item('trousers', function(data, slot)
+	if PlayerData.sex == 1 and slot.metadata.sex ~= 'female' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement d\'homme' })
+		return
+	elseif PlayerData.sex == 0 and slot.metadata.sex ~= 'male' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement de femme' })
+		return
+	end
+	
+	TriggerEvent('qbx_symbiose:client:checkDress', {
+		type = 'drawables',
+		index = slot.metadata.index, 
+		sex = PlayerData.sex,
+		cb = function(canDress)
+			if not canDress then
+				lib.notify({description = 'T\'as déjà un pantalon sur toi !'})
+				return 
+			end
+
+			ox_inventory:useItem(data, function(data)
+				if data then
+					TriggerServerEvent('qbx_symbiose:server:clothesSaveItemsRename', data)
+					TriggerEvent('qbx_symbiose:client:applyDress', slot.metadata)
+				end
+			end)
+		end
+	})
+end)
+
+Item('bag', function(data, slot)
+	if PlayerData.sex == 1 and slot.metadata.sex ~= 'female' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement d\'homme' })
+		return
+	elseif PlayerData.sex == 0 and slot.metadata.sex ~= 'male' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement de femme' })
+		return
+	end
+	
+	TriggerEvent('qbx_symbiose:client:checkDress', {
+		type = 'drawables',
+		index = slot.metadata.index, 
+		sex = PlayerData.sex,
+		cb = function(canDress)
+			if not canDress then
+				lib.notify({description = 'T\'as déjà un pantalon sur toi !'})
+				return 
+			end
+
+			ox_inventory:useItem(data, function(data)
+				if data then
+					TriggerServerEvent('qbx_symbiose:server:clothesSaveItemsRename', data)
+					TriggerEvent('qbx_symbiose:client:applyDress', slot.metadata)
+				end
+			end)
+		end
+	})
+end)
+
+Item('shoes', function(data, slot)
+	if PlayerData.sex == 1 and slot.metadata.sex ~= 'female' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement d\'homme' })
+		return
+	elseif PlayerData.sex == 0 and slot.metadata.sex ~= 'male' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement de femme' })
+		return
+	end
+	
+	TriggerEvent('qbx_symbiose:client:checkDress', {
+		type = 'drawables',
+		index = slot.metadata.index, 
+		sex = PlayerData.sex,
+		cb = function(canDress)
+			if not canDress then
+				lib.notify({description = 'T\'as déjà des chaussures aux pieds !'})
+				return 
+			end
+
+			ox_inventory:useItem(data, function(data)
+				if data then
+					TriggerServerEvent('qbx_symbiose:server:clothesSaveItemsRename', data)
+					TriggerEvent('qbx_symbiose:client:applyDress', slot.metadata)
+				end
+			end)
+		end
+	})
+end)
+
+Item('accessory', function(data, slot)
+	if PlayerData.sex == 1 and slot.metadata.sex ~= 'female' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement d\'homme' })
+		return
+	elseif PlayerData.sex == 0 and slot.metadata.sex ~= 'male' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement de femme' })
+		return
+	end
+
+	TriggerEvent('qbx_symbiose:client:checkDress', {
+		type = 'drawables',
+		index = slot.metadata.index, 
+		sex = PlayerData.sex,
+		cb = function(canDress)
+			if not canDress then
+				lib.notify({description = 'T\'as déjà un équipement du même genre !'})
+				return 
+			end 
+			
+			ox_inventory:useItem(data, function(data)
+				if data then
+					TriggerServerEvent('qbx_symbiose:server:clothesSaveItemsRename', data)
+					TriggerEvent('qbx_symbiose:client:applyDress', slot.metadata)
+				end
+			end)
+		end
+	})
+end)
+
+Item('tshirt', function(data, slot)
+	if PlayerData.sex == 1 and slot.metadata.sex ~= 'female' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement d\'homme' })
+		return
+	elseif PlayerData.sex == 0 and slot.metadata.sex ~= 'male' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement de femme' })
+		return
+	end
+
+	TriggerEvent('qbx_symbiose:client:checkDress', {
+		type = 'drawables',
+		index = slot.metadata.index, 
+		sex = PlayerData.sex,
+		cb = function(canDress)
+			if not canDress then
+				lib.notify({description = 'T\'as déjà un équipement du même genre !'})
+				return 
+			end 
+			
+			ox_inventory:useItem(data, function(data)
+				if data then
+					TriggerServerEvent('qbx_symbiose:server:clothesSaveItemsRename', data)
+					TriggerEvent('qbx_symbiose:client:applyDress', slot.metadata)
+				end
+			end)
+		end
+	})
+end)
+
+Item('kevlar', function(data, slot)
+	if PlayerData.sex == 1 and slot.metadata.sex ~= 'female' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement d\'homme' })
+		return
+	elseif PlayerData.sex == 0 and slot.metadata.sex ~= 'male' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement de femme' })
+		return
+	end
+
+	TriggerEvent('qbx_symbiose:client:checkDress', {
+		type = 'drawables',
+		index = slot.metadata.index, 
+		sex = PlayerData.sex,
+		cb = function(canDress)
+			if not canDress then
+				lib.notify({description = 'T\'as déjà un équipement du même genre !'})
+				return 
+			end 
+			
+			ox_inventory:useItem(data, function(data)
+				if data then
+					TriggerServerEvent('qbx_symbiose:server:clothesSaveItemsRename', data)
+					TriggerEvent('qbx_symbiose:client:applyDress', slot.metadata)
+				end
+			end)
+		end
+	})
+end)
+
+Item('badge', function(data, slot)
+	if PlayerData.sex == 1 and slot.metadata.sex ~= 'female' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement d\'homme' })
+		return
+	elseif PlayerData.sex == 0 and slot.metadata.sex ~= 'male' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement de femme' })
+		return
+	end
+
+	TriggerEvent('qbx_symbiose:client:checkDress', {
+		type = 'drawables',
+		index = slot.metadata.index, 
+		sex = PlayerData.sex,
+		cb = function(canDress)
+			if not canDress then
+				lib.notify({description = 'T\'as déjà un équipement du même genre !'})
+				return 
+			end 
+			
+			ox_inventory:useItem(data, function(data)
+				if data then
+					TriggerServerEvent('qbx_symbiose:server:clothesSaveItemsRename', data)
+					TriggerEvent('qbx_symbiose:client:applyDress', slot.metadata)
+				end
+			end)
+		end
+	})
+end)
+
+Item('jacket', function(data, slot)
+	if PlayerData.sex == 1 and slot.metadata.sex ~= 'female' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement d\'homme' })
+		return
+	elseif PlayerData.sex == 0 and slot.metadata.sex ~= 'male' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement de femme' })
+		return
+	end
+
+	TriggerEvent('qbx_symbiose:client:checkDress', {
+		type = 'drawables',
+		index = slot.metadata.index, 
+		sex = PlayerData.sex,
+		cb = function(canDress)
+			if not canDress then
+				lib.notify({description = 'T\'as déjà un équipement du même genre !'})
+				return 
+			end 
+			
+			ox_inventory:useItem(data, function(data)
+				if data then
+					TriggerServerEvent('qbx_symbiose:server:clothesSaveItemsRename', data)
+					TriggerEvent('qbx_symbiose:client:applyDress', slot.metadata)
+				end
+			end)
+		end
+	})
+end)
+
+---ACCESSOIRES
+Item('hat', function(data, slot)
+	if PlayerData.sex == 1 and slot.metadata.sex ~= 'female' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement d\'homme' })
+		return
+	elseif PlayerData.sex == 0 and slot.metadata.sex ~= 'male' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement de femme' })
+		return
+	end
+
+	TriggerEvent('qbx_symbiose:client:checkDress', {
+		type = 'props',
+		index = slot.metadata.index, 
+		sex = PlayerData.sex,
+		cb = function(canDress)
+			if not canDress then
+				lib.notify({description = 'T\'as déjà un accessoire de tête !'})
+				return 
+			end 
+			
+			ox_inventory:useItem(data, function(data)
+				if data then
+					TriggerServerEvent('qbx_symbiose:server:clothesSaveItemsRename', data)
+					TriggerEvent('qbx_symbiose:client:applyProps', slot.metadata)
+				end
+			end)
+		end
+	})
+end)
+
+Item('glasses', function(data, slot)
+	if PlayerData.sex == 1 and slot.metadata.sex ~= 'female' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement d\'homme' })
+		return
+	elseif PlayerData.sex == 0 and slot.metadata.sex ~= 'male' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement de femme' })
+		return
+	end
+
+	TriggerEvent('qbx_symbiose:client:checkDress', {
+		type = 'props',
+		index = slot.metadata.index, 
+		sex = PlayerData.sex,
+		cb = function(canDress)
+			if not canDress then
+				lib.notify({description = 'T\'as déjà des lunettes !'})
+				return 
+			end 
+			
+			ox_inventory:useItem(data, function(data)
+				if data then
+					TriggerServerEvent('qbx_symbiose:server:clothesSaveItemsRename', data)
+					TriggerEvent('qbx_symbiose:client:applyProps', slot.metadata)
+				end
+			end)
+		end
+	})
+end)
+
+Item('earaccess', function(data, slot)
+	if PlayerData.sex == 1 and slot.metadata.sex ~= 'female' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement d\'homme' })
+		return
+	elseif PlayerData.sex == 0 and slot.metadata.sex ~= 'male' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement de femme' })
+		return
+	end
+
+	TriggerEvent('qbx_symbiose:client:checkDress', {
+		type = 'props',
+		index = slot.metadata.index, 
+		sex = PlayerData.sex,
+		cb = function(canDress)
+			if not canDress then
+				lib.notify({description = 'T\'as déjà un accessoire d\'oreille !'})
+				return 
+			end 
+			
+			ox_inventory:useItem(data, function(data)
+				if data then
+					TriggerServerEvent('qbx_symbiose:server:clothesSaveItemsRename', data)
+					TriggerEvent('qbx_symbiose:client:applyProps', slot.metadata)
+				end
+			end)
+		end
+	})
+end)
+
+Item('watch', function(data, slot)
+	if PlayerData.sex == 1 and slot.metadata.sex ~= 'female' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement d\'homme' })
+		return
+	elseif PlayerData.sex == 0 and slot.metadata.sex ~= 'male' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement de femme' })
+		return
+	end
+
+	TriggerEvent('qbx_symbiose:client:checkDress', {
+		type = 'props',
+		index = slot.metadata.index, 
+		sex = PlayerData.sex,
+		cb = function(canDress)
+			if not canDress then
+				lib.notify({description = 'T\'as déjà une montre !'})
+				return 
+			end 
+			
+			ox_inventory:useItem(data, function(data)
+				if data then
+					TriggerServerEvent('qbx_symbiose:server:clothesSaveItemsRename', data)
+					TriggerEvent('qbx_symbiose:client:applyProps', slot.metadata)
+				end
+			end)
+		end
+	})
+end)
+
+Item('bracelet', function(data, slot)
+	if PlayerData.sex == 1 and slot.metadata.sex ~= 'female' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement d\'homme' })
+		return
+	elseif PlayerData.sex == 0 and slot.metadata.sex ~= 'male' then
+		lib.notify({ description = 'Tu ne peux pas porter un vêtement de femme' })
+		return
+	end
+
+	TriggerEvent('qbx_symbiose:client:checkDress', {
+		type = 'props',
+		index = slot.metadata.index, 
+		sex = PlayerData.sex,
+		cb = function(canDress)
+			if not canDress then
+				lib.notify({description = 'T\'as déjà un bracelet !'})
+				return 
+			end 
+			
+			ox_inventory:useItem(data, function(data)
+				if data then
+					TriggerServerEvent('qbx_symbiose:server:clothesSaveItemsRename', data)
+					TriggerEvent('qbx_symbiose:client:applyProps', slot.metadata)
+				end
+			end)
+		end
+	})
+end)
+
 exports('Items', function(item) return getItem(nil, item) end)
 exports('ItemList', function(item) return getItem(nil, item) end)
 
