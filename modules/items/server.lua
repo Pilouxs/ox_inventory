@@ -464,6 +464,20 @@ end
 -- 	end
 -- end)
 
+Item('phone', function(event, item, inventory, slot, data)
+	if event == 'buying' then
+		print('pawnshop')
+		exports['Renewed-Banking']:addAccountMoney('pawnshop', 150)
+	end
+end)
+
+Item('radio', function(event, item, inventory, slot, data)
+	if event == 'buying' then
+		print('pawnshop')
+		exports['Renewed-Banking']:addAccountMoney('pawnshop', 75)
+	end
+end)
+
 -----------------------------------------------------------------------------------------------
 
 return Items
