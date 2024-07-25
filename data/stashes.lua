@@ -35,6 +35,155 @@ return {
 		weight = 70000,
 		groups = {['ambulance'] = 0}
 	},
+	---@MECANO
+	{
+		coords = vec3(-331.85, -154.9, 38.06),
+		target = {
+			loc = vec3(-331.85, -154.9, 38.06),
+			length = 0.75,
+			width = 4.7,
+			heading = 358,
+			minZ = 37.66,
+			maxZ = 40.66,
+			label = 'Stock 1',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'mechanic_stock-1',
+		label = 'Mécano : Stock 1',
+		owner = false,
+		slots = 50,
+		weight = 500000,
+		groups = {['mecano'] = 0}
+	},
+	{
+		coords = vec3(-333.2, -158.54, 38.06),
+		target = {
+			loc = vec3(-333.2, -158.54, 38.06),
+			length = 0.75,
+			width = 4.7,
+			heading = 358,
+			minZ = 37.86,
+			maxZ = 40.86,
+			label = 'Stock 2',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'mechanic_stock-2',
+		label = 'Mécano : Stock 2',
+		owner = false,
+		slots = 50,
+		weight = 500000,
+		groups = {['mecano'] = 0}
+	},
+	{
+		coords = vec3(-334.45, -162.41, 38.06),
+		target = {
+			loc = vec3(-334.45, -162.41, 38.06),
+			length = 0.6,
+			width = 4.7,
+			heading = 358,
+			minZ = 37.86,
+			maxZ = 40.86,
+			label = 'Stock 3',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'mechanic_stock-3',
+		label = 'Mécano : Stock 3',
+		owner = false,
+		slots = 50,
+		weight = 500000,
+		groups = {['mecano'] = 0}
+	},
+	---@ETAGERES
+	{
+		coords = vec3(-337.05, -142.31, 38.06),
+		target = {
+			loc = vec3(-337.05, -142.31, 38.06),
+			length = 7.55,
+			width = 0.8,
+			heading = 70,
+			minZ = 38.06,
+			maxZ = 40.86,
+			label = 'Etagère 1',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'mechanic_etagere-1',
+		label = 'Mécano : Etagère 1',
+		owner = false,
+		slots = 50,
+		weight = 500000,
+		groups = {['mecano'] = 0}
+	},
+	{
+		coords = vec3(-323.12, -107.18, 38.06),
+		target = {
+			loc = vec3(-323.12, -107.18, 38.06),
+			length = 5.65,
+			width = 1.6,
+			heading = 70,
+			minZ = 38.06,
+			maxZ = 41.26,
+			label = 'Etagère 2',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'mechanic_etagere-2',
+		label = 'Mécano : Etagère 2',
+		owner = false,
+		slots = 50,
+		weight = 500000,
+		groups = {['mecano'] = 0}
+	},
+	{
+		coords = vec3(-334.06, -102.04, 38.06),
+		target = {
+			loc = vec3(-334.06, -102.04, 38.06),
+			length = 3.85,
+			width = 0.7,
+			heading = 70,
+			minZ = 38.06,
+			maxZ = 40.86,
+			label = 'Etagère 3',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'mechanic_etagere-3',
+		label = 'Mécano : Etagère 3',
+		owner = false,
+		slots = 50,
+		weight = 500000,
+		groups = {['mecano'] = 0}
+	},
+	{
+		coords = vec3(-352.28, -126.84, 38.06),
+		target = {
+			loc = vec3(-352.28, -126.84, 38.06),
+			length = 2.8,
+			width = 2.15,
+			heading = 340,
+			minZ = 38.06,
+			maxZ = 41.26,
+			label = 'Etagère 4',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'mechanic_etagere-4',
+		label = 'Mécano : Etagère 4',
+		owner = false,
+		slots = 50,
+		weight = 500000,
+		groups = {['mecano'] = 0}
+	},
 	---@GALAXY
 	---@TABLES
 	{
@@ -1801,5 +1950,481 @@ return {
 		owner = false,
 		slots = 25,
 		weight = 50000,
+	},
+	---@GANGS
+	---@CRIPS
+	{
+		coords = vec3(-340.07, 53.66, 43.23),
+		target = {
+			loc = vec3(-340.07, 53.66, 43.23),
+			length = 2.4,
+			width = 0.75,
+			heading = 270,
+			minZ = 43.23,
+			maxZ = 46.0,
+			label = 'Stock 1',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_1_stockage-1',
+		label = 'Gang 1 : Stockage 1',
+		owner = false,
+		slots = 150,
+		weight = 1000000,
+		--groups = {['cafe'] = 0}
+	},
+	{
+		coords = vec3(-341.01, 40.66, 43.23),
+		target = {
+			loc = vec3(-341.01, 40.66, 43.23),
+			length = 2.5,
+			width = 0.85,
+			heading = 270,
+			minZ = 43.23,
+			maxZ = 45.0,
+			label = 'Stock 1',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_1_stockage-2',
+		label = 'Gang 1 : Stockage 2',
+		owner = false,
+		slots = 150,
+		weight = 1000000,
+		--groups = {['cafe'] = 0}
+	},
+	---@APPARTEMENT_1
+	{
+		coords = vec3(-363.76, 65.78, 53.42),
+		target = {
+			loc = vec3(-363.76, 65.78, 53.42),
+			length = 1.05,
+			width = 0.45,
+			heading = 270,
+			minZ = 53.42,
+			maxZ = 55.42,
+			label = 'Frigo',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_1_appartement_1_frigo-1',
+		label = 'Gang 1 : Appartement 1 : Frigo 1',
+		owner = false,
+		slots = 50,
+		weight = 100000,
+		--groups = {['cafe'] = 0}
+	},
+	{
+		coords = vec3(-369.58, 75.88, 53.42),
+		target = {
+			loc = vec3(-369.58, 75.88, 53.42),
+			length = 1.4,
+			width = 0.75,
+			heading = 358,
+			minZ = 53.42,
+			maxZ = 55.82,
+			label = 'Stock',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_1_appartement_1_stock-1',
+		label = 'Gang 1 : Appartement 1 : Stock 1',
+		owner = false,
+		slots = 100,
+		weight = 500000,
+		--groups = {['cafe'] = 0}
+	},
+	---@APPARTEMENT_2
+	{
+		coords = vec3(-352.17, 65.8, 53.42),
+		target = {
+			loc = vec3(-352.17, 65.8, 53.42),
+			length = 0.9,
+			width = 0.7,
+			heading = 270,
+			minZ = 53.42,
+			maxZ = 55.42,
+			label = 'Frigo',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_1_appartement_2_frigo-1',
+		label = 'Gang 1 : Appartement 2 : Frigo 1',
+		owner = false,
+		slots = 50,
+		weight = 100000,
+		--groups = {['cafe'] = 0}
+	},
+	{
+		coords = vec3(-351.63, 69.32, 53.42),
+		target = {
+			loc = vec3(-351.63, 69.32, 53.42),
+			length = 2.75,
+			width = 0.45,
+			heading = 269,
+			minZ = 54.72,
+			maxZ = 55.82,
+			label = 'Stock',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_1_appartement_2_stock-1',
+		label = 'Gang 1 : Appartement 2 : Stock 1',
+		owner = false,
+		slots = 100,
+		weight = 500000,
+		--groups = {['cafe'] = 0}
+	},
+	---@APPARTEMENT_3
+	{
+		coords = vec3(-338.78, 65.46, 53.42),
+		target = {
+			loc = vec3(-338.78, 65.46, 53.42),
+			length = 1.05,
+			width = 0.5,
+			heading = 269,
+			minZ = 53.42,
+			maxZ = 55.42,
+			label = 'Frigo',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_1_appartement_3_frigo-1',
+		label = 'Gang 1 : Appartement 3 : Frigo 1',
+		owner = false,
+		slots = 50,
+		weight = 100000,
+		--groups = {['cafe'] = 0}
+	},
+	{
+		coords = vec3(-344.73, 71.89, 53.42),
+		target = {
+			loc = vec3(-344.73, 71.89, 53.42),
+			length = 1.6,
+			width = 0.8,
+			heading = 359,
+			minZ = 53.42,
+			maxZ = 55.82,
+			label = 'Stock',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_1_appartement_3_stock-1',
+		label = 'Gang 1 : Appartement 3 : Stock 1',
+		owner = false,
+		slots = 100,
+		weight = 500000,
+		--groups = {['cafe'] = 0}
+	},
+	---@APPARTEMENT_4
+	{
+		coords = vec3(-329.82, 62.67, 53.43),
+		target = {
+			loc = vec3(-329.82, 62.67, 53.43),
+			length = 1.8,
+			width = 0.55,
+			heading = 269,
+			minZ = 53.43,
+			maxZ = 56.23,
+			label = 'Frigo',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_1_appartement_4_frigo-1',
+		label = 'Gang 1 : Appartement 4 : Frigo 1',
+		owner = false,
+		slots = 50,
+		weight = 100000,
+		--groups = {['cafe'] = 0}
+	},
+	{
+		coords = vec3(-325.89, 81.91, 53.02),
+		target = {
+			loc = vec3(-325.89, 81.91, 53.02),
+			length = 1.85,
+			width = 0.7,
+			heading = 359,
+			minZ = 53.02,
+			maxZ = 55.02,
+			label = 'Stock',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_1_appartement_4_stock-1',
+		label = 'Gang 1 : Appartement 4 : Stock 1',
+		owner = false,
+		slots = 100,
+		weight = 500000,
+		--groups = {['cafe'] = 0}
+	},
+	{
+		coords = vec3(-341.01, 40.66, 43.23),
+		target = {
+			loc = vec3(-341.01, 40.66, 43.23),
+			length = 2.5,
+			width = 0.85,
+			heading = 270,
+			minZ = 43.23,
+			maxZ = 45.83,
+			label = 'Stock',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_1_stock-boss-1',
+		label = 'Gang 1 : Boss : Stock 1',
+		owner = false,
+		slots = 100,
+		weight = 500000,
+		--groups = {['cafe'] = 0}
+	},
+	---@GANGS
+	---@BLOODS
+	---@APPARTEMENT_1
+	{
+		coords = vec3(-1567.79, -408.64, 47.19),
+		target = {
+			loc = vec3(-1567.79, -408.64, 47.19),
+			length = 1.2,
+			width = 0.7,
+			heading = 49,
+			minZ = 47.19,
+			maxZ = 49.24,
+			label = 'Frigo',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_2_appartement_1_frigo-1',
+		label = 'Gang 2 : Appartement 1 : Frigo 1',
+		owner = false,
+		slots = 50,
+		weight = 100000,
+		--groups = {['cafe'] = 0}
+	},
+	{
+		coords = vec3(-1559.74, -405.1, 47.19),
+		target = {
+			loc = vec3(-1559.74, -405.1, 47.19),
+			length = 1.35,
+			width = 0.75,
+			heading = 50,
+			minZ = 47.19,
+			maxZ = 49.64,
+			label = 'Stock',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_2_appartement_1_stock-1',
+		label = 'Gang 2 : Appartement 1 : Stock 1',
+		owner = false,
+		slots = 100,
+		weight = 500000,
+		--groups = {['cafe'] = 0}
+	},
+	---@APPARTEMENT_2
+	{
+		coords = vec3(-1546.82, -387.93, 47.19),
+		target = {
+			loc = vec3(-1546.82, -387.93, 47.19),
+			length = 0.9,
+			width = 0.9,
+			heading = 319,
+			minZ = 47.19,
+			maxZ = 49.14,
+			label = 'Frigo',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_2_appartement_2_frigo-1',
+		label = 'Gang 2 : Appartement 2 : Frigo 1',
+		owner = false,
+		slots = 50,
+		weight = 100000,
+		--groups = {['cafe'] = 0}
+	},
+	{
+		coords = vec3(-1545.68, -387.18, 47.19),
+		target = {
+			loc = vec3(-1545.68, -387.18, 47.19),
+			length = 1.6,
+			width = 0.55,
+			heading = 50,
+			minZ = 47.19,
+			maxZ = 48.99,
+			label = 'Stock',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_2_appartement_2_stock-1',
+		label = 'Gang 2 : Appartement 2 : Stock 1',
+		owner = false,
+		slots = 100,
+		weight = 500000,
+		--groups = {['cafe'] = 0}
+	},
+	---@APPARTEMENT_3
+	{
+		coords = vec3(-1564.65, -376.54, 47.19),
+		target = {
+			loc = vec3(-1564.65, -376.54, 47.19),
+			length = 1.25,
+			width = 0.8,
+			heading = 50,
+			minZ = 47.19,
+			maxZ = 49.39,
+			label = 'Frigo',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_2_appartement_3_frigo-1',
+		label = 'Gang 2 : Appartement 3 : Frigo 1',
+		owner = false,
+		slots = 50,
+		weight = 100000,
+		--groups = {['cafe'] = 0}
+	},
+	{
+		coords = vec3(-1563.64, -369.92, 47.19),
+		target = {
+			loc = vec3(-1563.64, -369.92, 47.19),
+			length = 3.95,
+			width = 3.75,
+			heading = 320,
+			minZ = 47.19,
+			maxZ = 49.79,
+			label = 'Stock',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_2_appartement_3_stock-1',
+		label = 'Gang 2 : Appartement 3 : Stock 1',
+		owner = false,
+		slots = 100,
+		weight = 500000,
+		--groups = {['cafe'] = 0}
+	},
+	---@APPARTEMENT_4
+	{
+		coords = vec3(-1567.62, -408.81, 51.08),
+		target = {
+			loc = vec3(-1567.62, -408.81, 51.08),
+			length = 0.7,
+			width = 0.8,
+			heading = 320,
+			minZ = 51.08,
+			maxZ = 53.08,
+			label = 'Frigo',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_2_appartement_4_frigo-1',
+		label = 'Gang 2 : Appartement 4 : Frigo 1',
+		owner = false,
+		slots = 50,
+		weight = 100000,
+		--groups = {['cafe'] = 0}
+	},
+	{
+		coords = vec3(-1560.41, -404.6, 51.08),
+		target = {
+			loc = vec3(-1560.41, -404.6, 51.08),
+			length = 3.2,
+			width = 0.65,
+			heading = 50,
+			minZ = 51.1,
+			maxZ = 53.1,
+			label = 'Stock',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_2_appartement_4_stock-1',
+		label = 'Gang 2 : Appartement 4 : Stock 1',
+		owner = false,
+		slots = 100,
+		weight = 500000,
+		--groups = {['cafe'] = 0}
+	},
+	---@APPARTEMENT_5
+	{
+		coords = vec3(-1554.45, -387.59, 51.08),
+		target = {
+			loc = vec3(-1554.45, -387.59, 51.08),
+			length = 2.85,
+			width = 1.05,
+			heading = 320,
+			minZ = 51.08,
+			maxZ = 53.48,
+			label = 'Stock',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_2_appartement_5_stock-1',
+		label = 'Gang 2 : Appartement 5 : Stock 1',
+		owner = false,
+		slots = 100,
+		weight = 500000,
+		--groups = {['cafe'] = 0}
+	},
+	---@APPARTEMENT_6
+	{
+		coords = vec3(-1564.71, -376.54, 51.08),
+		target = {
+			loc = vec3(-1564.71, -376.54, 51.08),
+			length = 0.95,
+			width = 0.6,
+			heading = 50,
+			minZ = 51.08,
+			maxZ = 53.33,
+			label = 'Frigo',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_2_appartement_6_frigo-1',
+		label = 'Gang 2 : Appartement 6 : Frigo 1',
+		owner = false,
+		slots = 50,
+		weight = 100000,
+		--groups = {['cafe'] = 0}
+	},
+	{
+		coords = vec3(-1575.65, -384.18, 51.08),
+		target = {
+			loc = vec3(-1575.65, -384.18, 51.08),
+			length = 1.9,
+			width = 0.55,
+			heading = 50,
+			minZ = 51.08,
+			maxZ = 52.88,
+			label = 'Stock',
+			icon = 'fas fa-cubes-stacked',
+			debug = true,
+
+		},
+		name = 'Gang_2_stock-boss-1',
+		label = 'Gang 2 : Boss : Stock 1',
+		owner = false,
+		slots = 50,
+		weight = 100000,
+		--groups = {['cafe'] = 0}
 	},
 }
