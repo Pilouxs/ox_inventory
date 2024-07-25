@@ -1,6 +1,7 @@
 return {
 	Pawnshop = {
 		name = 'Pawnshop',
+		label = 'Acheter des produits',
 		blip = {
 			id = 59, colour = 69, scale = 0.8
 		}, inventory = {
@@ -16,6 +17,7 @@ return {
 
 	General = {
 		name = '24/7',
+		label = 'Accéder à la liste des produits',
 		blip = {
 			id = 59, colour = 69, scale = 0.8
 		}, inventory = {
@@ -50,6 +52,7 @@ return {
 
 	Liquor = {
 		name = '24/7 Liqueur',
+		label = 'Accéder à la liste des produits',
 		blip = {
 			id = 93, colour = 69, scale = 0.8
 		}, inventory = {
@@ -76,6 +79,7 @@ return {
 
 	YouTool = {
 		name = 'Bric-à-Brac',
+		label = 'Accéder à la liste des produits',
 		blip = {
 			id = 402, colour = 69, scale = 0.8
 		}, inventory = {
@@ -90,6 +94,7 @@ return {
 
 	Ammunation = {
 		name = 'Armurerie',
+		label = 'Accéder à la liste des armes',
 		blip = {
 			id = 110, colour = 69, scale = 0.8
 		}, inventory = {
@@ -122,6 +127,7 @@ return {
 
 	VendingMachineDrinks = {
 		name = 'Distributeur automatique',
+		label = 'Accéder au distributeur automatique',
 		inventory = {
 			{ name = 'water', price = 10 },
 			{ name = 'cola', price = 10 },
